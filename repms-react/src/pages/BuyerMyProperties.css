@@ -1,0 +1,244 @@
+.my-properties-page{
+    padding:30px;
+}
+
+.my-properties-page h1{
+    color:#390804;
+    margin-bottom:25px;
+}
+
+.property-grid{
+    display:grid;
+    grid-template-columns:
+            repeat(auto-fill,minmax(340px,1fr));
+    gap:25px;
+}
+
+.property-card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:
+            0 3px 12px rgba(0,0,0,.08);
+}
+
+.property-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.property-body{
+    padding:20px;
+}
+
+.property-body h3{
+    color:#390804;
+    margin-bottom:12px;
+}
+
+.property-address{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#666;
+    margin-bottom:12px;
+}
+
+.property-features{
+    display:flex;
+    gap:20px;
+    margin-bottom:15px;
+}
+
+.property-features span{
+    display:flex;
+    align-items:center;
+    gap:6px;
+}
+
+.property-price{
+    font-size:28px;
+    font-weight:700;
+    color:#7d1208;
+    margin-bottom:15px;
+}
+
+.status-badge{
+    display:inline-block;
+    padding:8px 16px;
+    border-radius:20px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.status-badge.rented{
+    background: #fdfde8;
+    color: #cab31b;
+}
+
+.property-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.details-btn,
+.update-btn,
+.terminate-btn{
+    flex:1;
+    min-width:120px;
+    height:42px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.details-btn{
+    background:#f3e3d8;
+    color:#390804;
+}
+
+.update-btn{
+    background: #570d06;
+    color:white;
+}
+
+.terminate-btn{
+    background:#b91c1c;
+    color:white;
+}
+
+.details-btn:hover{
+    background:#ead4c5;
+}
+
+.update-btn:hover{
+    background:#570d06;
+}
+
+.terminate-btn:hover{
+    background:#991b1b;
+}
+
+.empty-state{
+    background:white;
+    padding:50px;
+    text-align:center;
+    border-radius:16px;
+    color:#666;
+}
+
+.property-modal textarea,
+.delete-modal textarea{
+
+    width:100%;
+
+    min-height:100px;
+
+    padding:12px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    resize:none;
+}
+
+.success-modal{
+
+    width:400px;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:
+            0 15px 35px rgba(0,0,0,.15);
+}
+
+.success-icon{
+
+    width:75px;
+
+    height:75px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#e7f7eb;
+
+    color:#1f7a34;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+}
+
+.success-modal h2{
+
+    color:#390804;
+
+    margin-bottom:10px;
+}
+
+.success-modal p{
+
+    color:#666;
+
+    margin-bottom:25px;
+}
+
+.success-btn{
+
+    width:100%;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#570d06;
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+.success-btn:hover{
+
+    background:#390804;
+}
+.owner-info{
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #e5e5e5;
+    margin-bottom: 18px;
+}
+
+.owner-info p{
+    margin: 4px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.owner-info strong{
+    color: #7a0a02;
+}

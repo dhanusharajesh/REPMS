@@ -1,0 +1,68 @@
+.buyer-profile-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    padding: 40px;
+
+    background: linear-gradient(
+            135deg,
+            #870f07,
+            #ed1200
+    );
+
+    color: white;
+
+    border-radius: 24px;
+
+    margin-bottom: 30px;
+
+    box-shadow:
+            0 10px 30px rgba(122,17,10,0.25);
+}
+
+.buyer-profile-header img {
+    width: 130px;
+
+    height: 130px;
+
+    border-radius: 50%;
+
+    border: 6px solid rgba(255,255,255,0.9);
+
+    background: white;
+}
+
+.buyer-profile-header h1 {
+    font-size: 52px;
+
+    font-weight: 700;
+
+    margin-bottom: 8px;
+
+    color: white;
+}
+
+.buyer-profile-header p {
+    font-size: 28px;
+
+    color: rgba(255,255,255,0.9);
+
+    margin-bottom: 15px;
+}
+
+.buyer-role-badge {
+    display: inline-block;
+
+    background: white;
+
+    color: #7a110a;
+
+    padding: 10px 24px;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+    font-size: 15px;
+}

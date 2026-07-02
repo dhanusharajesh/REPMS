@@ -1,0 +1,162 @@
+.seller-maintenance-page {
+    padding: 30px;
+}
+
+.seller-maintenance-page h1 {
+    color: #3d0000;
+    margin-bottom: 25px;
+}
+
+.create-notice-btn {
+    background: #8b1200;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.create-notice-btn:hover {
+    background: #6d0e00;
+}
+
+/* TABLE */
+
+.maintenance-table {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.maintenance-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.maintenance-table thead {
+    background: #5a0700;
+    color: white;
+}
+
+.maintenance-table th {
+    padding: 18px;
+    text-align: left;
+}
+
+.maintenance-table td {
+    padding: 18px;
+    border-bottom: 1px solid #eee;
+}
+
+/* MODAL */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.maintenance-modal {
+    background: white;
+    width: 550px;
+    border-radius: 20px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.maintenance-modal h2 {
+    color: #3d0000;
+    margin: 0;
+}
+
+.maintenance-modal select,
+.maintenance-modal textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.maintenance-modal textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.submit-btn {
+    flex: 1;
+    background: #8b1200;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.submit-btn:hover {
+    background: #6d0e00;
+}
+
+.cancel-btn {
+    flex: 1;
+    background: #ece0d7;
+    color: #5a0700;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.cancel-btn:hover {
+    background: #dfd0c4;
+}
+
+.complete-btn {
+    background: #0d7a31;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.complete-btn:hover {
+    background: #096126;
+}
+
+.maintenance-status {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.maintenance-status.active {
+    background: #fff0c2;
+    color: #9a6a00;
+}
+
+.maintenance-status.complete {
+    background: #d7f0dd;
+    color: #0d7a31;
+}

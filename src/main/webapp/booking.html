@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Property</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top-header">
+
+    <div class="logo"
+         onclick="window.location.href='properties'">
+        <img src="images/logo.png"
+             alt="REPMS Logo">
+        <span>REPMS</span>
+
+    </div>
+
+    <div class="header-title">
+        Real Estate Property Management System
+    </div>
+
+</header>
+
+<div class="booking-container">
+
+    <h1>Tenant Information</h1>
+
+    <div class="selected-property">
+
+        <h2>Selected Property</h2>
+
+        <div id="propertySummary">
+
+        </div>
+
+    </div>
+
+    <form id="bookingForm"
+          action="booking"
+          method="post">
+
+        <input type="hidden"
+               id="propertyId"
+               name="propertyId">
+
+        <input type="text"
+               name="firstName"
+               placeholder="First Name"
+               required>
+
+        <input type="text"
+               name="lastName"
+               placeholder="Last Name"
+               required>
+
+        <input type="tel"
+               name="phone"
+               placeholder="Phone Number"
+               required>
+
+        <input type="email"
+               name="email"
+               placeholder="Email Address"
+               required>
+
+        <label>Lease Start Date</label>
+
+        <input type="date"
+               name="leaseStart"
+               required>
+
+        <label>Lease End Date</label>
+
+        <input type="date"
+               name="leaseEnd"
+               required>
+
+        <button type="submit">
+            Confirm Booking
+        </button>
+
+    </form>
+
+</div>
+
+<script src="js/script.js"></script>
+
+<footer>
+
+    © 2026 REPMS | Property Management Platform
+
+</footer>
+
+</body>
+</html>

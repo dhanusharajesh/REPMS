@@ -1,0 +1,292 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background: #ecb793;
+}
+
+header{
+    text-align:center;
+    padding:25px;
+    background: #390804;
+    color:white;
+}
+
+header p{
+    margin-top:8px;
+}
+
+.property-container{
+    width:90%;
+    margin:30px auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.property-card{
+    background: #ef8c82;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+
+    transition:0.3s;
+}
+
+.property-card:hover{
+    transform:translateY(-5px);
+}
+
+.property-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.property-info{
+    padding:15px;
+}
+
+.property-info h2{
+    margin-bottom:10px;
+}
+
+.property-info p{
+    margin-bottom:8px;
+}
+
+.status{
+    font-weight:bold;
+}
+
+.available{
+    color:green;
+}
+
+.rented{
+    color:red;
+}
+
+.book-btn{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background: #45120d;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.book-btn:hover{
+    background: #6a2d27;
+}
+
+.booked-btn{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:gray;
+    color:white;
+    cursor:not-allowed;
+}
+
+.booking-container{
+    width:900px;
+    margin:40px auto;
+    background:#ef8c82;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.booking-container h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.booking-container form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.booking-container input{
+    padding:12px;
+    border:1px solid #9e5953;
+    border-radius:8px;
+}
+
+.booking-container button{
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#45120d;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    grid-column:span 2;
+}
+
+.booking-container button:hover{
+    background:#6a2d27;
+}
+
+.success-container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#ecb793;
+}
+
+.success-card{
+    background: #e3a099;
+    padding:40px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    width:450px;
+}
+
+.success-card h1{
+    color:green;
+    margin-bottom:20px;
+}
+
+.success-card p{
+    margin-bottom:15px;
+}
+
+.success-card button{
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    background:#45120d;
+    color:white;
+    cursor:pointer;
+}
+
+.top-header{
+    height:70px;
+    background: #570d06;
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 30px;
+}
+
+.logo{
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    height:50px;
+    width:auto;
+}
+
+.logo span{
+    margin-left:10px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.header-title{
+    font-size:18px;
+}
+
+.dashboard-layout{
+    display:flex;
+    min-height:calc(100vh - 130px);
+}
+
+.sidebar{
+    width:240px;
+    background: #230301;
+    color:white;
+    padding:25px;
+}
+
+.sidebar h2{
+    margin-bottom:25px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    padding:15px;
+    margin-bottom:10px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.sidebar li:hover{
+    background: #5a3531;
+}
+
+.sidebar .active{
+    background: #5c2823;
+}
+
+.main-content{
+    flex:1;
+    padding:25px;
+}
+
+.main-content h2{
+    margin-bottom:20px;
+}
+
+footer{
+    height:60px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#570d06;
+    color:white;
+}
+
+.selected-property{
+    margin-bottom:25px;
+}
+
+.selected-property h2{
+    margin-bottom:15px;
+}
+
+.property-summary-card{
+    border:1px solid #ddd;
+    border-radius:10px;
+    overflow:hidden;
+    background:#f9fafb;
+}
+
+.property-summary-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.property-summary-info{
+    padding:15px;
+}
+
+.property-summary-info p{
+    margin-bottom:8px;
+}
